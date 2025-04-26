@@ -89,6 +89,17 @@
     <footer>
         <p>&copy; 2025 Lini Aari Designers. All rights reserved.</p>
     </footer>
+<script>
+  window.addEventListener('scroll', function() {
+    var faq = document.getElementById('faq');
+    var position = faq.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.3;
+
+    if (position < screenPosition) {
+      faq.classList.add('show');
+    }
+  });
+</script>
 
 <script src="script.js"></script>
 </body>
